@@ -7,6 +7,7 @@ var headerComment = require('gulp-header-comment');
 var about = require('gulp-about');
 var uglify = require('gulp-uglify');
 var cloudinaryUpload = require('gulp-cloudinary-upload');
+var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 
 gulp.task('html', function() {
@@ -27,7 +28,8 @@ gulp.task('css', function() {
       Author: <%= _.upperFirst(pkg.author) %>
     `))
     .pipe(less())
-    .pipe(minifyCSS())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(minifyCSS({compatibility: 'ie8', keepBreaks:false}))
     .pipe(gulp.dest('dist/css'))
 });
 
@@ -42,6 +44,7 @@ gulp.task('js', function() {
     `))
     .pipe(sourcemaps.init())
     .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/js'))
 });
