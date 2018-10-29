@@ -85,8 +85,8 @@ gulp.task('serve', function() {
 
   // gulp.watch("app/scss/*.scss", ['sass']);
   gulp.watch("*.html").on('change', browserSync.reload);
-  gulp.watch("assets/*.css").on('change', browserSync.reload);
-  gulp.watch("assets/*.js").on('change', browserSync.reload);
+  gulp.watch("assets/css/*.css").on('change', browserSync.reload);
+  gulp.watch("assets/js/*.js").on('change', browserSync.reload);
   gulp.watch("assets/img/*").on('change', browserSync.reload);
 });
 
