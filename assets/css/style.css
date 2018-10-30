@@ -17322,3 +17322,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background: #f1f1f1;
   display: block;
 }
+.topic-category-list ul{
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 0;
+}
+.topic-category-list ul li{
+  list-style: none;
+  display: inline-block;
+}
