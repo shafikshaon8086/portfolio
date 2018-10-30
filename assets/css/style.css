@@ -17295,3 +17295,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .h-400{
   height: 400px;
 }
+.list-group-content ul{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.list-group-content ul li{
+  list-style: none;
+  display: inline-block;
+}
