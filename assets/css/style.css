@@ -17291,3 +17291,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .h5-no-margin {
   margin-bottom: 0;
 }
+
+.h-400{
+  height: 400px;
+}
