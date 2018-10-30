@@ -17303,3 +17303,22 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   list-style: none;
   display: inline-block;
 }
+.font-size-8{
+  font-size: 0.8rem;
+}
+.list-group ul{
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 0;
+}
+.list-group ul li{
+  list-style: none;
+  display: inline-block;
+}
+.display-inline li{
+  display: inline-block;
+}
+.topic-pic{
+  background: #f1f1f1;
+  display: block;
+}
